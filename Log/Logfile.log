@@ -1,0 +1,2 @@
+2022-07-15 15:48:58,681 : INFO : Getting the data from https://7facbdb5-b28c-46e1-a70f-a00b44f62626.mock.io/api/v1.0/system/is_running/Windows. The response json is {'name': 'Windows', 'status': 'terminated', 'pid': 95617}
+2022-07-15 15:48:58,682 : INFO : Verified the name of running process to be Windows and status code to be 400

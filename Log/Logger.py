@@ -2,7 +2,7 @@ import logging
 
 
 def getlogger():
-    filename = "C:\\Users\\prakrk\\PycharmProjects\\EmbeddedTestingMockAPI\\Log\\Logfile.log"
+    filename ="C:\\HU Training\\Embedded Systems\\EmbeddedTestingMockAPI\\Log\\Logfile.log"
     logger = logging.getLogger(__name__)
     logger.setLevel(logging.INFO)
     file_handler = logging.FileHandler(filename, 'w')

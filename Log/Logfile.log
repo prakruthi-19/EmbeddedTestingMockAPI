@@ -1,4 +1,95 @@
-2022-07-15 17:40:00,073 : INFO : Executing get request using endpoint https://7facbdb5-b28c-46e1-a70f-a00b44f62626.mock.io/api/v1.0/system/clock/value
-2022-07-15 17:40:00,120 : INFO : The response data is {'Region': 'US/Alaska', 'datetime': '2022-07-15 04:10:00:AM -0800', 'timezone': 'AKDT'}
-2022-07-15 17:40:00,120 : INFO : Verified the status code to be 200
-2022-07-15 17:40:00,120 : INFO : Verified the datetime 2022-07-15 04:10:00:AM -0800 with current time
+2022-07-15 18:26:37,161 : INFO : Executing get request for endpoint https://7facbdb5-b28c-46e1-a70f-a00b44f62626.mock.io/api/v1.0/swupdate/boot-status
+2022-07-15 18:26:37,161 : INFO : The response data is {'boot-status': 'Success', 'status': 'Pass'}
+2022-07-15 18:26:37,161 : INFO : Verified the status to be Pass
+2022-07-15 18:26:37,161 : INFO : Verified the status code to be 200
+2022-07-15 18:26:37,161 : INFO : Executing get request for endpoint https://7facbdb5-b28c-46e1-a70f-a00b44f62626.mock.io/api/v1.0/swupdate/boot-status
+2022-07-15 18:26:37,161 : INFO : The response data is {'boot-status': 'Failed', 'status': 'Fail'}
+2022-07-15 18:26:37,161 : INFO : Verified the status to be Fail
+2022-07-15 18:26:37,161 : INFO : Verified the status code to be 400
+2022-07-15 18:26:37,161 : INFO : Executing get request for endpoint https://7facbdb5-b28c-46e1-a70f-a00b44f62626.mock.io/api/v1.0/swupdate/boot-status
+2022-07-15 18:26:37,161 : INFO : The response data is {'boot-status': 'Loading', 'status': 'Loading'}
+2022-07-15 18:26:37,161 : INFO : Verified the status to be Loading
+2022-07-15 18:26:37,161 : INFO : Verified the status code to be 102
+2022-07-15 18:26:37,161 : INFO : Executing get request for endpoint https://7facbdb5-b28c-46e1-a70f-a00b44f62626.mock.io/api/v1.0//hw-revision
+2022-07-15 18:26:37,176 : INFO : The response data is {'status': 'success', 'board': 'CruiseBoardName', 'revision': '1.1'}
+2022-07-15 18:26:37,176 : INFO : Verified the board name to be CruiseBoardName and status code to be 200
+2022-07-15 18:26:37,176 : INFO : Executing get request for endpoint https://7facbdb5-b28c-46e1-a70f-a00b44f62626.mock.io/api/v1.0//hw-revision
+2022-07-15 18:26:37,176 : INFO : The response data is {'status': 'success', 'board': 'CruiseBoardName', 'revision': '1.1'}
+2022-07-15 18:26:37,176 : INFO : Verified the board name to be CruiseBoardName and status code to be 400
+2022-07-15 18:26:37,176 : INFO : Executing get request for endpoint https://7facbdb5-b28c-46e1-a70f-a00b44f62626.mock.io/api/v1.0//hw-revision
+2022-07-15 18:26:37,176 : INFO : The response data is {'status': 'success', 'board': 'CruiseBoardName', 'revision': '1.1'}
+2022-07-15 18:26:37,176 : INFO : Verified the board name to be CruiseBoardName and status code to be 102
+2022-07-15 18:26:37,176 : INFO : Executing get request for endpoint https://7facbdb5-b28c-46e1-a70f-a00b44f62626.mock.io/api/v1.0/device/relative_humidity_temperature
+2022-07-15 18:26:37,192 : INFO : Verified the status code to be 200 and status to be PASS
+2022-07-15 18:26:37,192 : INFO : Getting the data from https://7facbdb5-b28c-46e1-a70f-a00b44f62626.mock.io/api/v1.0/system/is_running/Windows. The response json is {'name': 'Windows', 'status': 'terminated', 'pid': 95617}
+2022-07-15 18:26:37,192 : INFO : Verified the name of running process to be Windows and status code to be 400
+2022-07-15 18:26:37,192 : INFO : Getting the data from https://7facbdb5-b28c-46e1-a70f-a00b44f62626.mock.io/api/v1.0/g2_5mp_camera/read_trigger_pulse_status
+2022-07-15 18:26:37,192 : INFO : The response json is {'sec': -733, 'nsec': -899}
+2022-07-15 18:26:37,192 : INFO : Error while retrieving the pulse interval
+2022-07-15 18:26:37,192 : INFO : Getting the data from https://7facbdb5-b28c-46e1-a70f-a00b44f62626.mock.io/api/v1.0/system/reboot_reason
+2022-07-15 18:26:37,208 : INFO : The response json is {'reason': 'soft reboot'}
+2022-07-15 18:26:37,208 : INFO : Verified the status code to be 200 and reason is soft reboot
+2022-07-15 18:26:37,208 : INFO : Getting the data from https://7facbdb5-b28c-46e1-a70f-a00b44f62626.mock.io/api/v1.0/system/reboot_reason
+2022-07-15 18:26:37,208 : INFO : The response json is {'reason': 'hard reboot'}
+2022-07-15 18:26:37,208 : INFO : Verified the status code to be 500 and reason is hard reboot
+2022-07-15 18:26:37,208 : INFO : Getting the data from https://7facbdb5-b28c-46e1-a70f-a00b44f62626.mock.io/api/v1.0/system/reboot_reason
+2022-07-15 18:26:37,208 : INFO : The response json is {'reason': 'random reboot'}
+2022-07-15 18:26:37,208 : INFO : Verified the status code to be 401 and reason is random reboot
+2022-07-15 18:26:37,208 : INFO : Getting the data from https://7facbdb5-b28c-46e1-a70f-a00b44f62626.mock.io/api/v1.0/system/reboot_reason
+2022-07-15 18:26:37,208 : INFO : The response json is {'reason': ' '}
+2022-07-15 18:26:37,223 : INFO : Verified the status code to be 400 and reason is  
+2022-07-15 18:26:37,223 : INFO : Executing get request for endpoint https://7facbdb5-b28c-46e1-a70f-a00b44f62626.mock.io/api/v1.0/swupdate/sw-versions
+2022-07-15 18:26:37,223 : INFO : The response data is {'status': 'success', 'versions': {'name': 'cruise 0.9', 'version': '0.9'}}
+2022-07-15 18:26:37,223 : INFO : Verified the version to be 0.9
+2022-07-15 18:26:37,223 : INFO : Verified the status code to be 200
+2022-07-15 18:26:37,223 : INFO : Executing get request for endpoint https://7facbdb5-b28c-46e1-a70f-a00b44f62626.mock.io/api/v1.0/swupdate/sw-versions
+2022-07-15 18:26:37,223 : INFO : The response data is {'status': 'success', 'versions': {'name': 'cruise 0.9', 'version': '0.9'}}
+2022-07-15 18:26:37,223 : INFO : Verified the version to be 0.9
+2022-07-15 18:26:37,223 : INFO : Verified the status code to be 400
+2022-07-15 18:26:37,223 : INFO : Executing get request for endpoint https://7facbdb5-b28c-46e1-a70f-a00b44f62626.mock.io/api/v1.0/swupdate/sw-versions
+2022-07-15 18:26:37,223 : INFO : The response data is {'status': 'success', 'versions': {'name': 'cruise 0.9', 'version': '0.9'}}
+2022-07-15 18:26:37,223 : INFO : Verified the version to be 0.9
+2022-07-15 18:26:37,223 : INFO : Verified the status code to be 102
+2022-07-15 18:26:37,239 : INFO : Getting the data from https://7facbdb5-b28c-46e1-a70f-a00b44f62626.mock.io/api/v1.0/hardware_test/stressapptest. The response json is {'cpu': 63.3, 'io': 4, 'hdd': 2, 'vm': 2, 'vm-bytes': 256, 'time': 37, 'temp-path': 'c://users/files', 'backoff': 10, 'persist': True, 'enable': False}
+2022-07-15 18:26:37,239 : INFO : Verified the status code to be 400
+2022-07-15 18:26:37,239 : INFO : Getting the data from https://7facbdb5-b28c-46e1-a70f-a00b44f62626.mock.io/api/v1.0/hardware_test/stressng. The response json is {'status': 'success', 'svc_status': {'argument_string': '', 'is_running': True}}
+2022-07-15 18:26:37,239 : INFO : Verified the status code to be 200 and status is success
+2022-07-15 18:26:37,239 : INFO : Getting the data from https://7facbdb5-b28c-46e1-a70f-a00b44f62626.mock.io/api/v1.0/hardware_test/stressng. The response json is {'status': 'Failed', 'svc_status': {'argument_string': '', 'is_running': False}}
+2022-07-15 18:26:37,239 : INFO : Verified the status code to be 400 and status is Failed
+2022-07-15 18:26:37,254 : INFO : Getting the data from https://7facbdb5-b28c-46e1-a70f-a00b44f62626.mock.io/api/v1.0/hardware_test/stressng. The response json is {'status': 'Loading', 'svc_status': {'argument_string': '', 'is_running': False}}
+2022-07-15 18:26:37,254 : INFO : Verified the status code to be 102 and status is Loading
+2022-07-15 18:26:37,393 : INFO : Executing get request using endpoint https://7facbdb5-b28c-46e1-a70f-a00b44f62626.mock.io/api/v1.0/system/clock/value
+2022-07-15 18:26:37,393 : INFO : The response data is {'Region': 'US/Alaska', 'datetime': '2022-07-15 04:56:37:AM -0800', 'timezone': 'AKDT'}
+2022-07-15 18:26:37,393 : INFO : Verified the status code to be 200
+2022-07-15 18:26:37,393 : INFO : Verified the datetime 2022-07-15 04:56:37:AM -0800 with current time
+2022-07-15 18:26:37,393 : INFO : Getting the data from https://7facbdb5-b28c-46e1-a70f-a00b44f62626.mock.io/api/v1.0/g2_5mp_camera/read_imx490_register/0x7663. The response json is {'status': 'Success', 'Register id': 1}
+2022-07-15 18:26:37,408 : INFO : Verified the status code to be 200 and status is Success
+2022-07-15 18:26:37,408 : INFO : Getting the data from https://7facbdb5-b28c-46e1-a70f-a00b44f62626.mock.io/api/v1.0/g2_5mp_camera/read_imx490_register/0x7663. The response json is {'status': 'Failed', 'Register id': '0x01'}
+2022-07-15 18:26:37,408 : INFO : Verified the status code to be 400 and status is Failed
+2022-07-15 18:26:37,408 : INFO : Getting the data from https://7facbdb5-b28c-46e1-a70f-a00b44f62626.mock.io/api/v1.0/g2_5mp_camera/read_imx490_register/0x7663. The response json is {'status': 'Failed', 'Register id': ' '}
+2022-07-15 18:26:37,408 : INFO : Verified the status code to be 400 and status is Failed
+2022-07-15 18:26:37,408 : INFO : Getting the data from https://7facbdb5-b28c-46e1-a70f-a00b44f62626.mock.io/api/v1.0/g2_5mp_camera/read_imx490_register/0x7663. The response json is {'status': 'Failed', 'Register id': -1}
+2022-07-15 18:26:37,408 : INFO : Verified the status code to be 400 and status is Failed
+2022-07-15 18:26:37,424 : INFO : Executing Post request for endpoint https://7facbdb5-b28c-46e1-a70f-a00b44f62626.mock.io/api/v1.0/g2_5mp_camera/enable_trigger_pulse
+2022-07-15 18:26:37,424 : INFO : Response data is {'disable': 1}
+2022-07-15 18:26:37,424 : INFO : Verified the status code to be 201 and the message Error since the frequency is less than 10Hz
+2022-07-15 18:26:37,424 : INFO : Executing post request for the endpoint https://7facbdb5-b28c-46e1-a70f-a00b44f62626.mock.io/api/v1.0/g2_5mp_camera/set_imx490_register with post data {'Status': 'Success', 'register_details': {'register': 1, 'register_value': 100}}
+2022-07-15 18:26:37,424 : INFO : Verified the response register_details and status to be Success with status code 201
+2022-07-15 18:26:37,424 : INFO : Executing post request for the endpoint https://7facbdb5-b28c-46e1-a70f-a00b44f62626.mock.io/api/v1.0/g2_5mp_camera/set_imx490_register with post data {'Status': 'Success', 'register_details': {'register': 2, 'register_value': 200}}
+2022-07-15 18:26:37,424 : INFO : Verified the response register_details and status to be Success with status code 201
+2022-07-15 18:26:37,439 : INFO : Executing post request for the endpoint https://7facbdb5-b28c-46e1-a70f-a00b44f62626.mock.io/api/v1.0/g2_5mp_camera/set_imx490_register with post data {'Status': 'Success', 'register_details': {'register': 3, 'register_value': 300}}
+2022-07-15 18:26:37,439 : INFO : Verified the response register_details and status to be Success with status code 201
+2022-07-15 18:26:37,439 : INFO : Executing the post request for the endpoint https://7facbdb5-b28c-46e1-a70f-a00b44f62626.mock.io/api/v1.0/g2_5mp_camera/set_trigger_pulse_interval
+2022-07-15 18:26:37,439 : INFO : Verified the seconds and nanoseconds to be 12341234
+2022-07-15 18:26:37,439 : INFO : Setting the pulse interval as 30-37
+2022-07-15 18:26:37,455 : INFO : Executing the post request for the endpoint https://7facbdb5-b28c-46e1-a70f-a00b44f62626.mock.io/api/v1.0/g2_5mp_camera/set_trigger_pulse_interval
+2022-07-15 18:26:37,455 : INFO : Verified the seconds and nanoseconds to be 23452345
+2022-07-15 18:26:37,455 : INFO : Setting the pulse interval as 30-37
+2022-07-15 18:26:37,462 : INFO : Executing the post request for the endpoint https://7facbdb5-b28c-46e1-a70f-a00b44f62626.mock.io/api/v1.0/g2_5mp_camera/set_trigger_pulse_time
+2022-07-15 18:26:37,462 : INFO : Verified the seconds and nanoseconds to be 12341234
+2022-07-15 18:26:37,462 : INFO : Setting the pulse time as 5
+2022-07-15 18:26:37,462 : INFO : Executing the post request for the endpoint https://7facbdb5-b28c-46e1-a70f-a00b44f62626.mock.io/api/v1.0/g2_5mp_camera/set_trigger_pulse_time
+2022-07-15 18:26:37,462 : INFO : Verified the seconds and nanoseconds to be 23452345
+2022-07-15 18:26:37,462 : INFO : Setting the pulse time as 2
+2022-07-15 18:26:37,462 : INFO : Executing post request for the endpoint to set stressng confighttps://7facbdb5-b28c-46e1-a70f-a00b44f62626.mock.io/api/v1.0/hardware_test/stressng with post data {'cpu': 63.3, 'io': 4, 'hdd': 2, 'vm': 2, 'vm-bytes': 256, 'time': 37, 'temp-path': 'c://users/files', 'backoff': 10, 'persist': True, 'enable': False}
+2022-07-15 18:26:37,462 : INFO : Verified the status code to be 102
